@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../layout/head') %>
+</head>
+
+
+<% memeList.forEach(meme => { %>
+  <div class="meme">
+    <img src="<%- meme.url %>">
+    <form action="/detail/<%= meme.id %>" method="post">
+      <input type="hidden" name="memeInfo" value="<%= meme.id %>" required>
+      <input type="hidden" name="memeInfo" value="<%= meme.name %>" required>
+      <input type="hidden" name="memeInfo" value="<%= meme.url %>" required>
+      <input type="hidden" name="memeInfo" value="<%= meme.width %>" required>
+      <input type="hidden" name="memeInfo" value="<%= meme.height %>" required>
+      <input type="hidden" name="memeInfo" value="<%= meme.box_count %>" required>
+    <button type="submit"> use this meme</button>
+    </form>
+  </div>
+
+
+<% }); %>
+
+
+<body>
+    This is the body
+  <main>
+    this is in the main
+  </main>
+</body>
+
+</html>

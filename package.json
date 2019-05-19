@@ -1,0 +1,28 @@
+{
+  "name": "mememaker",
+  "version": "1.0.0",
+  "description": "Just trying to standup a simple meme maker api thingie",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeroywking/mememaker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeroywking/mememaker/issues"
+  },
+  "homepage": "https://github.com/leeroywking/mememaker#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "method-override": "^3.0.0",
+    "pg": "^7.11.0",
+    "superagent": "^5.0.5"
+  }
+}

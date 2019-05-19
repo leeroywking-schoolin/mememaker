@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-flow: wrap;
+}
+.meme img {
+    width: 150px;
+
+}
+
+p{
+    display: block;
+}

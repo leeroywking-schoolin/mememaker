@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../layout/head') %>
+</head>
+
+
+  <div class="meme">
+    <img src="<%- memeInfo[2] %>">
+    <form action="/makeMeme" method="post">
+    <%= memeInfo[5] %> Boxes to fill out
+    <form action="/makeMeme" method="post">
+      <input type="hidden" name="text" value="<%= memeInfo[0] %>"
+    <% for(let i = 0; i < memeInfo[5]; i++) { %>
+      <input type="text" name="text" value="">
+    <% } %>
+    <button type="submit"> Make me a meme senpai</button>
+    </form>
+    </form>
+  </div>
+
+<body>
+    This is the body
+  <main>
+    this is in the main
+  </main>
+</body>
+
+</html>
